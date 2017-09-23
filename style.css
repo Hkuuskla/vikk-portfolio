@@ -1,0 +1,118 @@
+/* Navigatsiooni paigutamine üles paremale */
+header {
+   position: absolute; 
+   z-index: 2;
+   top: 0;
+   right: 0;
+}
+
+/* Navigatsiooni elementide stiil */
+header .menu {
+    list-style-type: none;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    display: flex;
+}
+
+/* Navigatsiooni linkide stiil */
+header a {
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    position: relative;
+    color: #fff;
+    background-color: transparent;
+    width: 125px;
+    padding: 10px 5px 0 5px;
+    line-height: 2em;
+    border: 1px solid rgba(255, 255, 255, 0);
+    transition: all 280ms ease-in-out;
+}
+
+/* Navigatsiooni tähtede vahe hõljumise ajal */
+header a:hover {
+    letter-spacing: 4px;
+}
+
+/* Navigatsiooni alakriipsu stiil */
+header a:after {
+    backface-visibility: hidden;
+    border: 1px solid rgba(255, 255, 255, 0);
+    bottom: 0px;
+    content: " ";
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    transition: all 280ms ease-in-out;
+    width: 0;  
+}
+
+/* Navigatsiooni alakriipsu stiil hõljumisel */
+header a:hover:after {
+    backface-visibility: hidden;
+    border-color: #fff;
+    transition: width 350ms ease-in-out;
+    width: 90%;
+}
+
+/* Navigatsiooni ikoonide stiil */
+header a.icon{
+    width: 2em;
+}
+
+/* Esilehe stiil */
+.page.home {
+    background-image: url("img/background.jpg");
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    min-height: 100%;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+/* Esilehe teksti stiil */
+.page.home .home-banner {
+    color: #fff;
+    margin-top: 200px;
+    text-align: center;
+    display: block;
+    font-size: 16px;
+}
+
+/* Pealkirja stiil */
+.page.home .home-banner h1 {
+    font-size: 2em;
+    margin-bottom: 15px !important;
+    line-height: 0.5em;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* Paragrahvi stiil */
+.page.home .home-banner p {
+    font-size: 1.5em;
+    margin-bottom: 0;
+    line-height: 1em !important;
+}
+
+/* Esilehe väikse avatari stiil */
+.page.home .me-icon {
+    background-image: url("img/me.jpg");
+    background-position: center center;
+    width: 80px;
+    height: 80px;
+    background-size: cover;
+    border-radius: 50%; 
+    vertical-align: middle;
+    display: inline-block;
+    margin: 60px;
+}
+
