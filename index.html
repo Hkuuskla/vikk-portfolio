@@ -16,8 +16,8 @@
         <script src="https://use.fontawesome.com/6943ee65ff.js"></script>
 
         <script
-            src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
             crossorigin="anonymous"
         ></script>
         <script
@@ -34,22 +34,22 @@
             <div class="logo"></div>
             <nav>
                 <ul class="menu">
-                    <li><a class="active" href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a class="home-button" href="#">Home</a></li>
+                    <li><a class="about-button" href="#">About</a></li>
+                    <li><a class="projects-button" href="#">Projects</a></li>
+                    <li><a class="contacts-button" href="#">Contact</a></li>
                     <li>
-                        <a class="icon" href="#">
+                        <a class="icon" href="https://github.com/Hkuuskla">
                             <i class="fa fa-github"></i>
                         </a>
                     </li>
                     <li>
-                        <a class="icon" href="#">
+                        <a class="icon" href="https://linkedin.com/in/helin-kuuskla-300372a7">
                             <i class="fa fa-linkedin"></i>
                         </a>
                     </li>
                     <li>
-                        <a class="icon" href="#">
+                        <a class="icon" href="https://codepen.io/Hkuuskla/">
                             <i class="fa fa-codepen"></i>
                         </a>
                     </li>
@@ -60,7 +60,7 @@
 
 
         <div class="pages">
-            <div class="jarallax page home">
+            <div id="home" class="jarallax page home">
                 <div class="home-banner">
                     <h1>
                     Looking for a Junior Software Developer? 
@@ -73,15 +73,28 @@
                 </div>
             </div>
 
-            <div class="jarallax page about">
+            <div id="about" class="jarallax page about">
                 <div class="content">Devin Walker is the creator of several highly rated and award winning WordPress plugins. His work is actively being used by hundreds of thousands of websites and has been featured in Product Hunt, WP Tavern, Torque, and several other widely regarded online publications.</div>
             </div>
 
-            <div class="jarallax page projects">
+            <div id="projects" class="jarallax page projects">
+                <h1>Business cards</h1>
+                <div class="adnet" >
+                    <img src="img/adnet_media_back.jpg">
+                    <div class="description">
+                        For Adnet Media, an advertising network.
+                    </div>
+                </div>
+                <div class="ilutakso" >
+                    <img src="img/ilutakso.jpg">
+                    <div class="description">
+                        For Ilutakso, a beauty salon. 
+                    </div>
+                </div>
             
             </div>
 
-             <div class="jarallax page contacts">
+             <div id="contacts" class="jarallax page contacts">
             
             </div>
         </div>
